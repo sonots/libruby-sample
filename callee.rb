@@ -1,7 +1,7 @@
 module Test
   class Callee
     def foo(a)
-      puts 'called!'
+      puts a
     end
   end
 end

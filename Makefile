@@ -4,7 +4,7 @@ INCLUDE = -I $(shell ruby -e 'puts RbConfig::CONFIG["rubyhdrdir"] + File::SEPARA
 
 all : $(TARGET)
 
-$(TARGET) : sample.c callee.rb
+$(TARGET) : sample.c
 	gcc $(INCLUDE) $(LIBS) -o $(TARGET) sample.c
 
 clean :
